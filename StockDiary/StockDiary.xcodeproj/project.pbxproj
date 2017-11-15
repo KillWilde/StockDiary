@@ -7,25 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FD2BD67FEEB40AC2593E975 /* libPods-StockDiary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCF6D492B06887462D8D88E /* libPods-StockDiary.a */; };
 		25BC592A1FBBD7F10015C792 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BC59291FBBD7F10015C792 /* AppDelegate.m */; };
-		25BC592D1FBBD7F10015C792 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BC592C1FBBD7F10015C792 /* ViewController.m */; };
-		25BC59301FBBD7F10015C792 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25BC592E1FBBD7F10015C792 /* Main.storyboard */; };
 		25BC59321FBBD7F10015C792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25BC59311FBBD7F10015C792 /* Assets.xcassets */; };
-		25BC59351FBBD7F10015C792 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25BC59331FBBD7F10015C792 /* LaunchScreen.storyboard */; };
 		25BC59381FBBD7F10015C792 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BC59371FBBD7F10015C792 /* main.m */; };
+		25BC59401FBBDA530015C792 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25BC593E1FBBDA530015C792 /* LaunchScreen.storyboard */; };
+		25BC59461FBBDBCE0015C792 /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BC59451FBBDBCE0015C792 /* MainVC.m */; };
+		25BC59491FBBE21D0015C792 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BC59481FBBE21D0015C792 /* LoginVC.m */; };
+		25BC594D1FBC07860015C792 /* UIImage+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BC594C1FBC07860015C792 /* UIImage+Transform.m */; };
+		25BC594F1FBC0FDF0015C792 /* AppImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25BC594E1FBC0FDF0015C792 /* AppImage.xcassets */; };
+		25BC59551FBC23690015C792 /* PersonalProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BC59541FBC23690015C792 /* PersonalProfileVC.m */; };
+		25BC59581FBC23D10015C792 /* StockDiaryListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BC59571FBC23D10015C792 /* StockDiaryListVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		25BC59251FBBD7F10015C792 /* StockDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25BC59281FBBD7F10015C792 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		25BC59291FBBD7F10015C792 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		25BC592B1FBBD7F10015C792 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		25BC592C1FBBD7F10015C792 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		25BC592F1FBBD7F10015C792 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25BC59311FBBD7F10015C792 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		25BC59341FBBD7F10015C792 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25BC59361FBBD7F10015C792 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25BC59371FBBD7F10015C792 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		25BC593F1FBBDA530015C792 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		25BC59441FBBDBCE0015C792 /* MainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
+		25BC59451FBBDBCE0015C792 /* MainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
+		25BC59471FBBE21D0015C792 /* LoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		25BC59481FBBE21D0015C792 /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		25BC594B1FBC07860015C792 /* UIImage+Transform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Transform.h"; sourceTree = "<group>"; };
+		25BC594C1FBC07860015C792 /* UIImage+Transform.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Transform.m"; sourceTree = "<group>"; };
+		25BC594E1FBC0FDF0015C792 /* AppImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppImage.xcassets; sourceTree = "<group>"; };
+		25BC59501FBC10940015C792 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		25BC59531FBC23690015C792 /* PersonalProfileVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalProfileVC.h; sourceTree = "<group>"; };
+		25BC59541FBC23690015C792 /* PersonalProfileVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalProfileVC.m; sourceTree = "<group>"; };
+		25BC59561FBC23D10015C792 /* StockDiaryListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockDiaryListVC.h; sourceTree = "<group>"; };
+		25BC59571FBC23D10015C792 /* StockDiaryListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockDiaryListVC.m; sourceTree = "<group>"; };
+		35ACBDBF06AC55F88D393A19 /* Pods-StockDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockDiary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StockDiary/Pods-StockDiary.debug.xcconfig"; sourceTree = "<group>"; };
+		4FCF6D492B06887462D8D88E /* libPods-StockDiary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StockDiary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F631BA6916524AD0C6C4B41B /* Pods-StockDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockDiary.release.xcconfig"; path = "Pods/Target Support Files/Pods-StockDiary/Pods-StockDiary.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FD2BD67FEEB40AC2593E975 /* libPods-StockDiary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +62,8 @@
 			children = (
 				25BC59271FBBD7F10015C792 /* StockDiary */,
 				25BC59261FBBD7F10015C792 /* Products */,
+				6485E589D18924C2B0D4ACC9 /* Pods */,
+				45AC5A7A68C67291B69CB161 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,17 +78,91 @@
 		25BC59271FBBD7F10015C792 /* StockDiary */ = {
 			isa = PBXGroup;
 			children = (
+				25BC594A1FBC06630015C792 /* Category */,
+				25BC59411FBBDB250015C792 /* ViewControllers */,
 				25BC59281FBBD7F10015C792 /* AppDelegate.h */,
 				25BC59291FBBD7F10015C792 /* AppDelegate.m */,
-				25BC592B1FBBD7F10015C792 /* ViewController.h */,
-				25BC592C1FBBD7F10015C792 /* ViewController.m */,
-				25BC592E1FBBD7F10015C792 /* Main.storyboard */,
+				25BC59501FBC10940015C792 /* PrefixHeader.pch */,
+				25BC593E1FBBDA530015C792 /* LaunchScreen.storyboard */,
 				25BC59311FBBD7F10015C792 /* Assets.xcassets */,
-				25BC59331FBBD7F10015C792 /* LaunchScreen.storyboard */,
 				25BC59361FBBD7F10015C792 /* Info.plist */,
+				25BC594E1FBC0FDF0015C792 /* AppImage.xcassets */,
 				25BC59371FBBD7F10015C792 /* main.m */,
 			);
 			path = StockDiary;
+			sourceTree = "<group>";
+		};
+		25BC59411FBBDB250015C792 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				25BC59521FBC234D0015C792 /* Diary */,
+				25BC59511FBC234D0015C792 /* PersonalProfile */,
+				25BC59421FBBDB250015C792 /* Login */,
+				25BC59431FBBDB250015C792 /* Main */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		25BC59421FBBDB250015C792 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				25BC59471FBBE21D0015C792 /* LoginVC.h */,
+				25BC59481FBBE21D0015C792 /* LoginVC.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		25BC59431FBBDB250015C792 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				25BC59441FBBDBCE0015C792 /* MainVC.h */,
+				25BC59451FBBDBCE0015C792 /* MainVC.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		25BC594A1FBC06630015C792 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				25BC594B1FBC07860015C792 /* UIImage+Transform.h */,
+				25BC594C1FBC07860015C792 /* UIImage+Transform.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		25BC59511FBC234D0015C792 /* PersonalProfile */ = {
+			isa = PBXGroup;
+			children = (
+				25BC59531FBC23690015C792 /* PersonalProfileVC.h */,
+				25BC59541FBC23690015C792 /* PersonalProfileVC.m */,
+			);
+			path = PersonalProfile;
+			sourceTree = "<group>";
+		};
+		25BC59521FBC234D0015C792 /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				25BC59561FBC23D10015C792 /* StockDiaryListVC.h */,
+				25BC59571FBC23D10015C792 /* StockDiaryListVC.m */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		45AC5A7A68C67291B69CB161 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FCF6D492B06887462D8D88E /* libPods-StockDiary.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6485E589D18924C2B0D4ACC9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35ACBDBF06AC55F88D393A19 /* Pods-StockDiary.debug.xcconfig */,
+				F631BA6916524AD0C6C4B41B /* Pods-StockDiary.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25BC593B1FBBD7F10015C792 /* Build configuration list for PBXNativeTarget "StockDiary" */;
 			buildPhases = (
+				A50C8D67A92F468BECC2792C /* [CP] Check Pods Manifest.lock */,
 				25BC59211FBBD7F10015C792 /* Sources */,
 				25BC59221FBBD7F10015C792 /* Frameworks */,
 				25BC59231FBBD7F10015C792 /* Resources */,
+				8DB18D0D5088ADF52D97BB0A /* [CP] Embed Pods Frameworks */,
+				DC059AAFE4DE9362DE42FC83 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,21 +226,73 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25BC59351FBBD7F10015C792 /* LaunchScreen.storyboard in Resources */,
+				25BC59401FBBDA530015C792 /* LaunchScreen.storyboard in Resources */,
+				25BC594F1FBC0FDF0015C792 /* AppImage.xcassets in Resources */,
 				25BC59321FBBD7F10015C792 /* Assets.xcassets in Resources */,
-				25BC59301FBBD7F10015C792 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8DB18D0D5088ADF52D97BB0A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StockDiary/Pods-StockDiary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A50C8D67A92F468BECC2792C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DC059AAFE4DE9362DE42FC83 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StockDiary/Pods-StockDiary-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		25BC59211FBBD7F10015C792 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25BC592D1FBBD7F10015C792 /* ViewController.m in Sources */,
+				25BC59551FBC23690015C792 /* PersonalProfileVC.m in Sources */,
+				25BC59461FBBDBCE0015C792 /* MainVC.m in Sources */,
+				25BC59581FBC23D10015C792 /* StockDiaryListVC.m in Sources */,
 				25BC59381FBBD7F10015C792 /* main.m in Sources */,
+				25BC594D1FBC07860015C792 /* UIImage+Transform.m in Sources */,
+				25BC59491FBBE21D0015C792 /* LoginVC.m in Sources */,
 				25BC592A1FBBD7F10015C792 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,18 +300,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		25BC592E1FBBD7F10015C792 /* Main.storyboard */ = {
+		25BC593E1FBBDA530015C792 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				25BC592F1FBBD7F10015C792 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		25BC59331FBBD7F10015C792 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				25BC59341FBBD7F10015C792 /* Base */,
+				25BC593F1FBBDA530015C792 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -276,28 +417,36 @@
 		};
 		25BC593C1FBBD7F10015C792 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35ACBDBF06AC55F88D393A19 /* Pods-StockDiary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L48W3WHH6N;
+				DEVELOPMENT_TEAM = R6S652TPCM;
+				GCC_PREFIX_HEADER = StockDiary/PrefixHeader.pch;
 				INFOPLIST_FILE = StockDiary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SaturdayNight.StockDiary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		25BC593D1FBBD7F10015C792 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F631BA6916524AD0C6C4B41B /* Pods-StockDiary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L48W3WHH6N;
+				DEVELOPMENT_TEAM = R6S652TPCM;
+				GCC_PREFIX_HEADER = StockDiary/PrefixHeader.pch;
 				INFOPLIST_FILE = StockDiary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SaturdayNight.StockDiary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

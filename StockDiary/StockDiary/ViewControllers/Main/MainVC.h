@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainVC.h
 //  StockDiary
 //
 //  Created by SaturdayNight on 2017/11/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MainVC : UITabBarController
 
 @end
-
