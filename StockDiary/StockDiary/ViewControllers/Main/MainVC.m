@@ -51,7 +51,7 @@
     if (!_personalVC) {
         _personalVC = [[PersonalProfileVC alloc] init];
         _personalVC.tabBarItem.title = @"个人中心";
-        _personalVC.tabBarItem.image = [UIImage imageNamed:@""];
+        _personalVC.tabBarItem.image = [UIImage imageNamed:@"icon_tabbar_setting.png"];
     }
     
     return _personalVC;
@@ -62,7 +62,7 @@
     if (!_stockDiaryListVC) {
         _stockDiaryListVC = [[StockDiaryListVC alloc] init];
         _stockDiaryListVC.tabBarItem.title = @"股票记录";
-        _stockDiaryListVC.tabBarItem.image = [UIImage imageNamed:@""];
+        _stockDiaryListVC.tabBarItem.image = [UIImage imageNamed:@"icon_tabbar_book.png"];
     }
     
     return _stockDiaryListVC;

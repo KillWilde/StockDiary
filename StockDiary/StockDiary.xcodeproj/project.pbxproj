@@ -15,9 +15,12 @@
 		25BC59461FBBDBCE0015C792 /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BC59451FBBDBCE0015C792 /* MainVC.m */; };
 		25BC59491FBBE21D0015C792 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BC59481FBBE21D0015C792 /* LoginVC.m */; };
 		25BC594D1FBC07860015C792 /* UIImage+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BC594C1FBC07860015C792 /* UIImage+Transform.m */; };
-		25BC594F1FBC0FDF0015C792 /* AppImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25BC594E1FBC0FDF0015C792 /* AppImage.xcassets */; };
 		25BC59551FBC23690015C792 /* PersonalProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BC59541FBC23690015C792 /* PersonalProfileVC.m */; };
 		25BC59581FBC23D10015C792 /* StockDiaryListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BC59571FBC23D10015C792 /* StockDiaryListVC.m */; };
+		25BC595A1FBD1A360015C792 /* AppImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25BC59591FBD1A360015C792 /* AppImage.xcassets */; };
+		25BC595F1FBD1EED0015C792 /* CrossSlipCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BC595E1FBD1EED0015C792 /* CrossSlipCollectionView.m */; };
+		25BC59621FBD2C4C0015C792 /* CrossSlipCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BC59611FBD2C4C0015C792 /* CrossSlipCollectionViewCell.m */; };
+		25BC59681FBD60A90015C792 /* StockUserChosedListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BC59671FBD60A80015C792 /* StockUserChosedListVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,12 +37,18 @@
 		25BC59481FBBE21D0015C792 /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
 		25BC594B1FBC07860015C792 /* UIImage+Transform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Transform.h"; sourceTree = "<group>"; };
 		25BC594C1FBC07860015C792 /* UIImage+Transform.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Transform.m"; sourceTree = "<group>"; };
-		25BC594E1FBC0FDF0015C792 /* AppImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppImage.xcassets; sourceTree = "<group>"; };
 		25BC59501FBC10940015C792 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		25BC59531FBC23690015C792 /* PersonalProfileVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalProfileVC.h; sourceTree = "<group>"; };
 		25BC59541FBC23690015C792 /* PersonalProfileVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalProfileVC.m; sourceTree = "<group>"; };
 		25BC59561FBC23D10015C792 /* StockDiaryListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockDiaryListVC.h; sourceTree = "<group>"; };
 		25BC59571FBC23D10015C792 /* StockDiaryListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockDiaryListVC.m; sourceTree = "<group>"; };
+		25BC59591FBD1A360015C792 /* AppImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppImage.xcassets; sourceTree = "<group>"; };
+		25BC595D1FBD1EED0015C792 /* CrossSlipCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrossSlipCollectionView.h; sourceTree = "<group>"; };
+		25BC595E1FBD1EED0015C792 /* CrossSlipCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrossSlipCollectionView.m; sourceTree = "<group>"; };
+		25BC59601FBD2C4C0015C792 /* CrossSlipCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrossSlipCollectionViewCell.h; sourceTree = "<group>"; };
+		25BC59611FBD2C4C0015C792 /* CrossSlipCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrossSlipCollectionViewCell.m; sourceTree = "<group>"; };
+		25BC59661FBD60A80015C792 /* StockUserChosedListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockUserChosedListVC.h; sourceTree = "<group>"; };
+		25BC59671FBD60A80015C792 /* StockUserChosedListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockUserChosedListVC.m; sourceTree = "<group>"; };
 		35ACBDBF06AC55F88D393A19 /* Pods-StockDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockDiary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StockDiary/Pods-StockDiary.debug.xcconfig"; sourceTree = "<group>"; };
 		4FCF6D492B06887462D8D88E /* libPods-StockDiary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StockDiary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F631BA6916524AD0C6C4B41B /* Pods-StockDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockDiary.release.xcconfig"; path = "Pods/Target Support Files/Pods-StockDiary/Pods-StockDiary.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,13 +89,14 @@
 			children = (
 				25BC594A1FBC06630015C792 /* Category */,
 				25BC59411FBBDB250015C792 /* ViewControllers */,
+				25BC595B1FBD1E6A0015C792 /* Custom */,
 				25BC59281FBBD7F10015C792 /* AppDelegate.h */,
 				25BC59291FBBD7F10015C792 /* AppDelegate.m */,
 				25BC59501FBC10940015C792 /* PrefixHeader.pch */,
 				25BC593E1FBBDA530015C792 /* LaunchScreen.storyboard */,
 				25BC59311FBBD7F10015C792 /* Assets.xcassets */,
+				25BC59591FBD1A360015C792 /* AppImage.xcassets */,
 				25BC59361FBBD7F10015C792 /* Info.plist */,
-				25BC594E1FBC0FDF0015C792 /* AppImage.xcassets */,
 				25BC59371FBBD7F10015C792 /* main.m */,
 			);
 			path = StockDiary;
@@ -144,8 +154,29 @@
 			children = (
 				25BC59561FBC23D10015C792 /* StockDiaryListVC.h */,
 				25BC59571FBC23D10015C792 /* StockDiaryListVC.m */,
+				25BC59661FBD60A80015C792 /* StockUserChosedListVC.h */,
+				25BC59671FBD60A80015C792 /* StockUserChosedListVC.m */,
 			);
 			path = Diary;
+			sourceTree = "<group>";
+		};
+		25BC595B1FBD1E6A0015C792 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				25BC595C1FBD1E6A0015C792 /* ListView */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		25BC595C1FBD1E6A0015C792 /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				25BC595D1FBD1EED0015C792 /* CrossSlipCollectionView.h */,
+				25BC595E1FBD1EED0015C792 /* CrossSlipCollectionView.m */,
+				25BC59601FBD2C4C0015C792 /* CrossSlipCollectionViewCell.h */,
+				25BC59611FBD2C4C0015C792 /* CrossSlipCollectionViewCell.m */,
+			);
+			path = ListView;
 			sourceTree = "<group>";
 		};
 		45AC5A7A68C67291B69CB161 /* Frameworks */ = {
@@ -227,7 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25BC59401FBBDA530015C792 /* LaunchScreen.storyboard in Resources */,
-				25BC594F1FBC0FDF0015C792 /* AppImage.xcassets in Resources */,
+				25BC595A1FBD1A360015C792 /* AppImage.xcassets in Resources */,
 				25BC59321FBBD7F10015C792 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,10 +319,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				25BC59551FBC23690015C792 /* PersonalProfileVC.m in Sources */,
+				25BC59621FBD2C4C0015C792 /* CrossSlipCollectionViewCell.m in Sources */,
 				25BC59461FBBDBCE0015C792 /* MainVC.m in Sources */,
 				25BC59581FBC23D10015C792 /* StockDiaryListVC.m in Sources */,
 				25BC59381FBBD7F10015C792 /* main.m in Sources */,
+				25BC59681FBD60A90015C792 /* StockUserChosedListVC.m in Sources */,
 				25BC594D1FBC07860015C792 /* UIImage+Transform.m in Sources */,
+				25BC595F1FBD1EED0015C792 /* CrossSlipCollectionView.m in Sources */,
 				25BC59491FBBE21D0015C792 /* LoginVC.m in Sources */,
 				25BC592A1FBBD7F10015C792 /* AppDelegate.m in Sources */,
 			);
