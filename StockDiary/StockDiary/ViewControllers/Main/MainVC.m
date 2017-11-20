@@ -29,6 +29,7 @@
     
     self.tabBar.tintColor = [UIColor whiteColor];
     self.tabBar.barStyle = UIBarStyleBlack;
+    self.stockDiaryListVC.tabbarHeight = self.tabBar.frame.size.height;
     self.viewControllers = @[self.stockDiaryListVC,self.personalVC];
 }
 

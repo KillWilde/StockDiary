@@ -10,4 +10,6 @@
 
 @interface StockDiaryListVC : UIViewController
 
+@property (nonatomic,assign) CGFloat tabbarHeight;
+
 @end

@@ -25,7 +25,7 @@ static  NSString *const identifier = @"CrossSlipCollectionViewCell";
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor whiteColor];
-        self.datasource = [@[@"自选",@"预选",@"历史盈亏",@"总计",@"智能分析",@"报警",@"核算",@"预测",@"保底"] mutableCopy];
+        self.datasource = [@[@"自选",@"预选",@"历史盈亏",@"智能分析",@"核算"] mutableCopy];
         self.sIndex = 0;
         
         [self addSubview:self.slipList];
@@ -36,6 +36,19 @@ static  NSString *const identifier = @"CrossSlipCollectionViewCell";
     }
     
     return self;
+}
+
+-(void)setSIndexSelected:(NSInteger)index
+{
+    self.sIndex = index;
+    
+    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        self.sView.center = CGPointMake(self.sIndex * 80 + 40, 48);
+    } completion:nil];
+    
+    [self.slipList reloadData];
+    
+    [self.slipList scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:index inSection:0] atScrollPosition:(UICollectionViewScrollPositionCenteredHorizontally) animated:YES];
 }
 
 #pragma mark - Delegate
@@ -49,6 +62,12 @@ static  NSString *const identifier = @"CrossSlipCollectionViewCell";
     } completion:nil];
     
     [self.slipList reloadData];
+    
+    [self.slipList scrollToItemAtIndexPath:indexPath atScrollPosition:(UICollectionViewScrollPositionCenteredHorizontally) animated:YES];
+    
+    if (self.CrossSlipCollectionViewSelectedIndex) {
+        self.CrossSlipCollectionViewSelectedIndex(self.sIndex);
+    }
 }
 
 #pragma mark UICollectionDataSource

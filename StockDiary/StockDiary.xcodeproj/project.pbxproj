@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0FD2BD67FEEB40AC2593E975 /* libPods-StockDiary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCF6D492B06887462D8D88E /* libPods-StockDiary.a */; };
+		2551554E1FC271D600D0606D /* StockUserChosedListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2551554D1FC271D600D0606D /* StockUserChosedListCell.m */; };
 		25BC592A1FBBD7F10015C792 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BC59291FBBD7F10015C792 /* AppDelegate.m */; };
 		25BC59321FBBD7F10015C792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25BC59311FBBD7F10015C792 /* Assets.xcassets */; };
 		25BC59381FBBD7F10015C792 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BC59371FBBD7F10015C792 /* main.m */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2551554C1FC271D600D0606D /* StockUserChosedListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockUserChosedListCell.h; sourceTree = "<group>"; };
+		2551554D1FC271D600D0606D /* StockUserChosedListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockUserChosedListCell.m; sourceTree = "<group>"; };
 		25BC59251FBBD7F10015C792 /* StockDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25BC59281FBBD7F10015C792 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		25BC59291FBBD7F10015C792 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -66,6 +69,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2551554B1FC271A100D0606D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2551554C1FC271D600D0606D /* StockUserChosedListCell.h */,
+				2551554D1FC271D600D0606D /* StockUserChosedListCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		25BC591C1FBBD7F10015C792 = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +175,7 @@
 		25BC595B1FBD1E6A0015C792 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				2551554B1FC271A100D0606D /* Cell */,
 				25BC595C1FBD1E6A0015C792 /* ListView */,
 			);
 			path = Custom;
@@ -325,6 +338,7 @@
 				25BC59381FBBD7F10015C792 /* main.m in Sources */,
 				25BC59681FBD60A90015C792 /* StockUserChosedListVC.m in Sources */,
 				25BC594D1FBC07860015C792 /* UIImage+Transform.m in Sources */,
+				2551554E1FC271D600D0606D /* StockUserChosedListCell.m in Sources */,
 				25BC595F1FBD1EED0015C792 /* CrossSlipCollectionView.m in Sources */,
 				25BC59491FBBE21D0015C792 /* LoginVC.m in Sources */,
 				25BC592A1FBBD7F10015C792 /* AppDelegate.m in Sources */,

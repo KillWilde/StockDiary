@@ -8,6 +8,7 @@
 
 #import "StockUserChosedListVC.h"
 #import <Masonry.h>
+#import "StockUserChosedListCell.h"
 
 @interface StockUserChosedListVC () <UITableViewDelegate,UITableViewDataSource>
 
@@ -35,15 +36,19 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *identifier = @"";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    static NSString *identifier = @"StockUserChosedListCell";
+    StockUserChosedListCell *cell = (StockUserChosedListCell *)[tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        cell = [[StockUserChosedListCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
+    
+    cell.lbFUp.text = @"雄迈集成";
+    cell.lbFDown.text = @"610079";
+    cell.lbMMiddle.text = @"15.6";
+    cell.lbLLast.text = @"17.8";
     
     return cell;
 }
-
 
 #pragma mark - Layout
 -(void)masLayout
@@ -63,6 +68,7 @@
         _tbList = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
         _tbList.delegate = self;
         _tbList.dataSource = self;
+        _tbList.rowHeight = 55;
     }
     
     return _tbList;
