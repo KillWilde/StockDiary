@@ -2,6 +2,7 @@ platform:ios ,'8.0'
 target "StockDiary" do 
 pod 'Masonry'
 pod 'SVProgressHUD'
+pod 'FMDB'
 end
 
 
