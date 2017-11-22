@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainVC.h"
+#import <FMDB.h>
 
 @interface AppDelegate ()
 
@@ -21,10 +22,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     MainVC *main = [[MainVC alloc] init];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:main];
+    self.navMain = [[UINavigationController alloc] initWithRootViewController:main];
+    self.window.rootViewController = self.navMain;
     
     [self.window makeKeyAndVisible];
-    
+        
     return YES;
 }
 

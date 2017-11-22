@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class StockModel;
+
 @interface StockUserChosedListVC : UIViewController
+
+@property (nonatomic,strong) NSMutableArray <StockModel *>*dataSource;
+
+-(void)refreshList;
 
 @end

@@ -31,6 +31,9 @@
     self.tabBar.barStyle = UIBarStyleBlack;
     self.stockDiaryListVC.tabbarHeight = self.tabBar.frame.size.height;
     self.viewControllers = @[self.stockDiaryListVC,self.personalVC];
+    
+    // 设置push后返回按钮的标题
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain  target:nil action:nil];
 }
 
 -(void)viewWillAppear:(BOOL)animated

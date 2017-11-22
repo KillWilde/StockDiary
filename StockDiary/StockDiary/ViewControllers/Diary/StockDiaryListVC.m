@@ -10,11 +10,16 @@
 #import <Masonry.h>
 #import "CrossSlipCollectionView.h"
 #import "StockUserChosedListVC.h"
+#import "StockModel.h"
+#import "DBManager.h"
+#import <FMDB.h>
+#import "AddStockInfoVC.h"
 
 @interface StockDiaryListVC () <UIScrollViewDelegate>
 
-@property (nonatomic,strong) CrossSlipCollectionView *slipListView;
-@property (nonatomic,strong) UIScrollView *content;
+@property (nonatomic,strong) CrossSlipCollectionView *slipListView;         // 横向滑动列表
+@property (nonatomic,strong) UIButton *btnAdd;          // 添加按钮
+@property (nonatomic,strong) UIScrollView *content;         // 内容视图
 
 @property (nonatomic,strong) StockUserChosedListVC *stockUserChosedListVC;
 @property (nonatomic,strong) StockUserChosedListVC *stockUserChosedListVC1;
@@ -31,7 +36,10 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
+    [self getLocalDBCache];
+    
     [self.view addSubview:self.slipListView];
+    [self.view addSubview:self.btnAdd];
     [self.view addSubview:self.content];
     
     [self.content addSubview:self.stockUserChosedListVC.view];
@@ -43,6 +51,14 @@
     [self masLayout];
 }
 
+#pragma mark - DataLogic
+-(void)getLocalDBCache
+{
+    [DBManager createTableStockInfo];
+    
+    self.stockUserChosedListVC.dataSource = [[DBManager getStockInfoList] mutableCopy];
+}
+
 #pragma mark - UIScrollViewDelegate
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
@@ -52,14 +68,35 @@
     }
 }
 
+#pragma mark - EventAction
+-(void)btnAddClicked:(UIButton *)sender
+{
+    AddStockInfoVC *vc = [[AddStockInfoVC alloc] init];
+    vc.vcStyle = AddStockInfoVCStyleAdd;
+    vc.SaveDataCompletedAndRereshNow = ^{
+        [self getLocalDBCache];
+        
+        [self.stockUserChosedListVC refreshList];
+    };
+    
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 #pragma mark - Layout
 -(void)masLayout
 {
     [self.slipListView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.view);
-        make.right.equalTo(self.view);
+        make.right.equalTo(self.view).offset(-50);
         make.top.equalTo(self.view).offset(20);
         make.height.mas_equalTo(50);
+    }];
+    
+    [self.btnAdd mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(50);
+        make.width.mas_equalTo(50);
+        make.left.equalTo(self.slipListView.mas_right);
+        make.top.equalTo(self.view).offset(20);
     }];
     
     [self.content mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -117,6 +154,17 @@
     }
     
     return _slipListView;
+}
+
+-(UIButton *)btnAdd
+{
+    if (!_btnAdd) {
+        _btnAdd = [[UIButton alloc] init];
+        [_btnAdd setImage:[UIImage imageNamed:@"stocklist_add.png"] forState:UIControlStateNormal];
+        [_btnAdd addTarget:self action:@selector(btnAddClicked:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    
+    return _btnAdd;
 }
 
 -(UIView *)content
