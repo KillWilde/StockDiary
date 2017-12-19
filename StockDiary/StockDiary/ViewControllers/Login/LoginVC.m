@@ -21,6 +21,16 @@
 
 @implementation LoginVC
 
+-(BOOL)shouldAutorotate
+{
+    return YES;
+}
+
+-(UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationPortrait | UIInterfaceOrientationLandscapeLeft | UIInterfaceOrientationLandscapeRight;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -28,6 +38,7 @@
     self.navigationController.delegate = self;
     
     [self.view addSubview:self.imgVBG];
+    
     [self.view addSubview:self.btnLogin];
     
     [self masLayout];

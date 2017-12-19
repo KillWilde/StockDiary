@@ -12,6 +12,7 @@
 		255155521FC40E5200D0606D /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 255155511FC40E5200D0606D /* DBManager.m */; };
 		255155561FC4171300D0606D /* StockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 255155551FC4171300D0606D /* StockModel.m */; };
 		255155591FC502A400D0606D /* AddStockInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 255155581FC502A400D0606D /* AddStockInfoVC.m */; };
+		25A494411FCEA7270025CB0F /* DoorBellStateAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A494401FCEA7270025CB0F /* DoorBellStateAnimationView.m */; };
 		25BC592A1FBBD7F10015C792 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BC59291FBBD7F10015C792 /* AppDelegate.m */; };
 		25BC59321FBBD7F10015C792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25BC59311FBBD7F10015C792 /* Assets.xcassets */; };
 		25BC59381FBBD7F10015C792 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BC59371FBBD7F10015C792 /* main.m */; };
@@ -36,6 +37,8 @@
 		255155551FC4171300D0606D /* StockModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockModel.m; sourceTree = "<group>"; };
 		255155571FC502A400D0606D /* AddStockInfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddStockInfoVC.h; sourceTree = "<group>"; };
 		255155581FC502A400D0606D /* AddStockInfoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddStockInfoVC.m; sourceTree = "<group>"; };
+		25A4943F1FCEA7270025CB0F /* DoorBellStateAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoorBellStateAnimationView.h; sourceTree = "<group>"; };
+		25A494401FCEA7270025CB0F /* DoorBellStateAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoorBellStateAnimationView.m; sourceTree = "<group>"; };
 		25BC59251FBBD7F10015C792 /* StockDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25BC59281FBBD7F10015C792 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		25BC59291FBBD7F10015C792 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -103,6 +106,15 @@
 				255155551FC4171300D0606D /* StockModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		25A4943E1FCEA6C60025CB0F /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				25A4943F1FCEA7270025CB0F /* DoorBellStateAnimationView.h */,
+				25A494401FCEA7270025CB0F /* DoorBellStateAnimationView.m */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 		25BC591C1FBBD7F10015C792 = {
@@ -208,6 +220,7 @@
 				2551554F1FC40E2F00D0606D /* Manager */,
 				2551554B1FC271A100D0606D /* Cell */,
 				25BC595C1FBD1E6A0015C792 /* ListView */,
+				25A4943E1FCEA6C60025CB0F /* Animation */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -368,6 +381,7 @@
 				25BC59461FBBDBCE0015C792 /* MainVC.m in Sources */,
 				255155521FC40E5200D0606D /* DBManager.m in Sources */,
 				25BC59581FBC23D10015C792 /* StockDiaryListVC.m in Sources */,
+				25A494411FCEA7270025CB0F /* DoorBellStateAnimationView.m in Sources */,
 				25BC59381FBBD7F10015C792 /* main.m in Sources */,
 				255155591FC502A400D0606D /* AddStockInfoVC.m in Sources */,
 				25BC59681FBD60A90015C792 /* StockUserChosedListVC.m in Sources */,

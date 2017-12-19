@@ -95,7 +95,6 @@
         
         resultSet = [db executeQuery:cmd];
         
-        
         while (resultSet.next) {
             StockModel *model = [[StockModel alloc] init];
             model.name = [resultSet stringForColumn:@"name"];
